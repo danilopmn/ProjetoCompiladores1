@@ -1,0 +1,217 @@
+grammar org.com.compiladores.C with org.eclipse.xtext.common.Terminals
+
+generate danfe "http://www.xtext.org/compiladores/project/Danfe"
+
+
+DomainModel:
+	geetings+=testa;
+
+testa:
+	"pega"
+;
+//primary_expression
+//	: IDENTIFIER
+////	| CONSTANT
+//	| STRING_LITERAL
+//	| '(' expression ')'
+//	;
+//
+//postfix_expression
+//	: (primary_expression) 
+//	| '[' expression ']' postfix_expression
+//	| '(' ')' postfix_expression
+//	| '(' argument_expression_list ')' postfix_expression
+//	| '.' IDENTIFIER postfix_expression 
+//	| PTR_OP IDENTIFIER postfix_expression
+//	| INC_OP postfix_expression
+//	| DEC_OP postfix_expression
+//	;
+//		
+//argument_expression_listI
+//	: (',' assignment_expression argument_expression_listI)?
+//	;
+//	
+//argument_expression_list
+//	: assignment_expression argument_expression_listI
+//	;
+//
+//unary_expression
+//	: postfix_expression
+//	| INC_OP unary_expression
+//	| DEC_OP unary_expression
+//	| unary_operator cast_expression
+//	| SIZEOF unary_expression
+////	| SIZEOF '(' type_name ')'
+//	;
+//	
+//unary_operator
+//	: '&'
+//	| '*'
+//	| '+'
+//	| '-'
+//	| '~'
+//	| '!'
+//	;
+//
+//cast_expression
+//	: unary_expression
+////	| '(' type_name ')' cast_expression
+//	;
+//
+//multiplicative_expressionI
+//	: ('*' cast_expression multiplicative_expressionI)?
+//	| ('/' cast_expression multiplicative_expressionI)?
+//	| ('%' cast_expression multiplicative_expressionI)?
+//;
+//
+//multiplicative_expression
+//	: cast_expression multiplicative_expression	multiplicative_expressionI
+//	;
+//	
+//additive_expression
+//	: multiplicative_expression
+//	| additive_expression '+' multiplicative_expression
+//	| additive_expression '-' multiplicative_expression
+//	;
+//	
+//	shift_expression
+//	: additive_expression
+//	| shift_expression LEFT_OP additive_expression
+//	| shift_expression RIGHT_OP additive_expression
+//	;
+//
+//relational_expression
+//	: shift_expression
+//	| relational_expression '<' shift_expression
+//	| relational_expression '>' shift_expression
+//	| relational_expression LE_OP shift_expression
+//	| relational_expression GE_OP shift_expression
+//	;
+//
+//equality_expression
+//	: relational_expression
+//	| equality_expression EQ_OP relational_expression
+//	| equality_expression NE_OP relational_expression
+//	;
+//
+//and_expression
+//	: equality_expression
+//	| and_expression '&' equality_expression
+//	;
+//
+//exclusive_or_expression
+//	: and_expression
+//	| exclusive_or_expression '^' and_expression
+//	;
+//
+//inclusive_or_expression
+//	: exclusive_or_expression
+//	| inclusive_or_expression '|' exclusive_or_expression
+//	;
+//
+//logical_and_expression
+//	: inclusive_or_expression
+//	| logical_and_expression AND_OP inclusive_or_expression
+//	;
+//
+//logical_or_expression
+//	: "d" logical_and_expression
+//	| logical_or_expression OR_OP logical_and_expression
+//	;
+//		
+//conditional_expression
+//	: logical_or_expression
+//	| logical_or_expression '?' expression ':' conditional_expression
+//	;
+//
+//assignment_expression
+//	: conditional_expression
+//	| unary_expression assignment_operator assignment_expression
+//	;
+//
+//expression
+//	: assignment_expression
+//	| expression ',' assignment_expression
+//	;
+//
+//
+//assignment_operator
+//	: '='
+//	| MUL_ASSIGN
+//	| DIV_ASSIGN
+//	| MOD_ASSIGN
+//	| ADD_ASSIGN
+//	| SUB_ASSIGN
+//	| LEFT_ASSIGN
+//	| RIGHT_ASSIGN
+//	| AND_ASSIGN
+//	| XOR_ASSIGN
+//	| OR_ASSIGN
+//	;
+//	
+//IDENTIFIER :
+//	ID
+//;
+//
+//STRING_LITERAL :
+//	STRING
+//;
+//
+//	//missing
+//terminal AUTO : "auto";
+//terminal BREAK : "break";
+//terminal CASE : "case";
+//terminal CHAR : "char";
+//terminal CONST : "const";
+//terminal CONTINUE : "continue";
+//terminal DEFAULT : "default";
+//terminal DO : "do";
+//terminal DOUBLE : "double";
+//terminal ELSE : "else";
+//terminal ENUM : "enum";
+//terminal EXTERN : "extern";
+//terminal FLOAT : "float";		
+//terminal FOR : "for";
+//terminal GOTO : "goto";
+//terminal IF : "if";
+//terminal INTE : "int";
+//terminal LONG : "long";
+//terminal REGISTER : "register";
+//terminal RETURNO : "return";
+//terminal SHORT : "short";
+//terminal SIGNED : "signed";
+//terminal SIZEOF : "sizeof";
+//terminal STATIC : "static";
+//terminal STRUCT : "struct";
+//terminal SWITCH : "switch";
+//terminal TYPEDEF : "typedef";
+//terminal UNION : "union";
+//terminal UNSIGNED : "unsigned";
+//terminal VOID : "void";
+//terminal VOLATILE : "volatile";
+//terminal WHILE : "while";
+////missing
+//
+//terminal ELLIPSIS : "..." ;
+//terminal RIGHT_ASSIGN : ">>=";
+//terminal LEFT_ASSIGN : "<<=";
+//terminal ADD_ASSIGN : "+=";
+//terminal SUB_ASSIGN : "-=";
+//terminal MUL_ASSIGN : "*=";
+//terminal DIV_ASSIGN : "/="; 
+//terminal MOD_ASSIGN : "%=";
+//terminal AND_ASSIGN : "&=";
+//terminal XOR_ASSIGN : "^=";
+//terminal OR_ASSIGN : "|=";
+//terminal RIGHT_OP : ">>";
+//terminal LEFT_OP : "<<";
+//terminal INC_OP : "++";
+//terminal DEC_OP : "--";
+//terminal PTR_OP : "->";
+//terminal AND_OP : "&&";
+//terminal OR_OP : "||";
+//terminal LE_OP : "<=";
+//terminal GE_OP : ">=";
+//terminal EQ_OP : "==";
+//terminal NE_OP : "!=";
+//missing
